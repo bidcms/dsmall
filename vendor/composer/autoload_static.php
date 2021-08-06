@@ -12,12 +12,12 @@ class ComposerStaticInita06397ffc82f70b09c98b1782fae46bc
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
-        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'd767e4fc2dc52fe66584ab8c6684783e' => __DIR__ . '/..' . '/adbario/php-dot-notation/src/helpers.php',
         '65fec9ebcfbb3cbb4fd0d519687aea01' => __DIR__ . '/..' . '/danielstjules/stringy/src/Create.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'b067bc7112e384b61c701452d53a14a8' => __DIR__ . '/..' . '/mtdowling/jmespath.php/src/JmesPath.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '66453932bc1be9fb2f910a27947d11b6' => __DIR__ . '/..' . '/alibabacloud/client/src/Functions.php',
@@ -44,10 +44,6 @@ class ComposerStaticInita06397ffc82f70b09c98b1782fae46bc
         'a' => 
         array (
             'app\\' => 4,
-        ),
-        'T' => 
-        array (
-            'TencentCloud\\' => 13,
         ),
         'S' => 
         array (
@@ -89,11 +85,6 @@ class ComposerStaticInita06397ffc82f70b09c98b1782fae46bc
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
-            'GatewayClient\\' => 14,
-        ),
-        'F' => 
-        array (
-            'Firebase\\JWT\\' => 13,
         ),
         'A' => 
         array (
@@ -137,11 +128,7 @@ class ComposerStaticInita06397ffc82f70b09c98b1782fae46bc
         ),
         'app\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app',
-        ),
-        'TencentCloud\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/tencentcloud/tencentcloud-sdk-php/src/TencentCloud',
+            0 => __DIR__ . '/../..' . '/application',
         ),
         'Symfony\\Polyfill\\Php72\\' => 
         array (
@@ -223,14 +210,6 @@ class ComposerStaticInita06397ffc82f70b09c98b1782fae46bc
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
-        'GatewayClient\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/workerman/gatewayclient',
-        ),
-        'Firebase\\JWT\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
-        ),
         'AlibabaCloud\\Client\\' => 
         array (
             0 => __DIR__ . '/..' . '/alibabacloud/client/src',
@@ -241,21 +220,11 @@ class ComposerStaticInita06397ffc82f70b09c98b1782fae46bc
         ),
     );
 
-    public static $fallbackDirsPsr0 = array (
-        0 => __DIR__ . '/../..' . '/extend',
-    );
-
-    public static $classMap = array (
-        'QcloudApi' => __DIR__ . '/..' . '/tencentcloud/tencentcloud-sdk-php/src/QcloudApi/QcloudApi.php',
-    );
-
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInita06397ffc82f70b09c98b1782fae46bc::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInita06397ffc82f70b09c98b1782fae46bc::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr0 = ComposerStaticInita06397ffc82f70b09c98b1782fae46bc::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInita06397ffc82f70b09c98b1782fae46bc::$classMap;
 
         }, null, ClassLoader::class);
     }

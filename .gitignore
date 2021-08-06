@@ -3,3 +3,5 @@ composer.lock
 *.log
 thinkphp
 /nbproject/private/
+*.DS_Store
+.user.ini

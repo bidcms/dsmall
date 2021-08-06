@@ -5,3 +5,4 @@ thinkphp
 /nbproject/private/
 *.DS_Store
 .user.ini
+runtime

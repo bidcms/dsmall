@@ -13,7 +13,8 @@ return array(
     'think\\' => array($vendorDir . '/topthink/framework/src/think', $vendorDir . '/topthink/think-helper/src', $vendorDir . '/topthink/think-image/src', $vendorDir . '/topthink/think-orm/src', $vendorDir . '/topthink/think-template/src'),
     'liliuwei\\think\\' => array($vendorDir . '/liliuwei/thinkphp-jump/src'),
     'clagiordano\\weblibs\\configmanager\\' => array($vendorDir . '/clagiordano/weblibs-configmanager/src'),
-    'app\\' => array($baseDir . '/application'),
+    'app\\' => array($baseDir . '/app'),
+    'TencentCloud\\' => array($vendorDir . '/tencentcloud/tencentcloud-sdk-php/src/TencentCloud'),
     'Symfony\\Polyfill\\Php72\\' => array($vendorDir . '/symfony/polyfill-php72'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Polyfill\\Intl\\Idn\\' => array($vendorDir . '/symfony/polyfill-intl-idn'),
@@ -34,6 +35,8 @@ return array(
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
+    'GatewayClient\\' => array($vendorDir . '/workerman/gatewayclient'),
+    'Firebase\\JWT\\' => array($vendorDir . '/firebase/php-jwt/src'),
     'AlibabaCloud\\Client\\' => array($vendorDir . '/alibabacloud/client/src'),
     'Adbar\\' => array($vendorDir . '/adbario/php-dot-notation/src'),
 );
